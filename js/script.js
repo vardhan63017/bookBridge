@@ -13,9 +13,8 @@ const initialBooksDatabase = [
     department: "CSE",
     subject: "Algorithms",
     year: "2nd Year",
-    image:
-      "https://images-na.ssl-images-amazon.com/images/P/8170646833.01.L.jpg",
-    seller: "Vardhan Kumar",
+    image: "https://m.media-amazon.com/images/I/51QnHyRKv5L.jpg",
+    seller: "shanmukha vardhan",
     location: "College Campus",
     rating: 4.5,
     reviews: 42,
@@ -35,7 +34,7 @@ const initialBooksDatabase = [
     subject: "Programming",
     year: "1st Year",
     image:
-      "https://images-na.ssl-images-amazon.com/images/P/0071606386.01.L.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIPg7erQO8ISlB45My7zxEtJPeMjOL1WEjDol-bucMLrCwK1ByfHrLSgkaApqvimQo4qbLlpDMeti4u3oDpySirBEYgmTQbcYCjRAweXi9MXEXAbbn0_KUuyKFkD3CCcf8J9C3is9ZYZekURNbA5AvvHsWkfQAenhHJQ5rbPQ2qKP2P_PkXllRDRiTGw/s1973/java.PNG",
     seller: "Rahul Singh",
     location: "Hostel A",
     rating: 4.3,
@@ -55,8 +54,7 @@ const initialBooksDatabase = [
     department: "CSE",
     subject: "Networks",
     year: "3rd Year",
-    image:
-      "https://images-na.ssl-images-amazon.com/images/P/0137487525.01.L.jpg",
+    image: "https://m.media-amazon.com/images/I/81G+P0nd+DL._SL1500_.jpg",
     seller: "Priya Sharma",
     location: "Library",
     rating: 4.2,
@@ -77,7 +75,7 @@ const initialBooksDatabase = [
     subject: "Database",
     year: "3rd Year",
     image:
-      "https://images-na.ssl-images-amazon.com/images/P/0470128674.01.L.jpg",
+      "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https://substack-post-media.s3.amazonaws.com/public/images/3cc99ea2-e8b0-47a8-8bd5-f32e1b795180_500x617.jpeg",
     seller: "Aman Patel",
     location: "Room 201",
     rating: 4.6,
@@ -97,8 +95,7 @@ const initialBooksDatabase = [
     department: "CSE",
     subject: "Database",
     year: "2nd Year",
-    image:
-      "https://images-na.ssl-images-amazon.com/images/P/8131725995.01.L.jpg",
+    image: "https://m.media-amazon.com/images/I/71sbdF227cL._SL1500_.jpg",
     seller: "Neha Gupta",
     location: "College Campus",
     rating: 4.4,
@@ -160,7 +157,7 @@ const initialBooksDatabase = [
     subject: "Programming",
     year: "2nd Year",
     image:
-      "https://images-na.ssl-images-amazon.com/images/P/1118008189.01.L.jpg",
+      "https://cdn.hackr.io/uploads/posts/attachments/1685715589qoQB4VEK9x.png",
     seller: "Sneha Patel",
     location: "College Campus",
     rating: 4.4,
@@ -241,7 +238,8 @@ const initialBooksDatabase = [
     department: "CSE",
     subject: "Programming",
     year: "4th Year",
-    image: "https://images-na.ssl-images-amazon.com/images/P/0135962609.01.L.jpg",
+    image:
+      "https://images-na.ssl-images-amazon.com/images/P/0135962609.01.L.jpg",
     seller: "Rishab Patel",
     location: "College Campus",
     rating: 4.4,
@@ -260,7 +258,8 @@ const initialBooksDatabase = [
     department: "CSE",
     subject: "Programming",
     year: "3rd Year",
-    image: "https://images-na.ssl-images-amazon.com/images/P/0124199266.01.L.jpg",
+    image:
+      "https://images-na.ssl-images-amazon.com/images/P/0124199266.01.L.jpg",
     seller: "Anjali Sharma",
     location: "Hostel D",
     rating: 4.3,
@@ -279,7 +278,8 @@ const initialBooksDatabase = [
     department: "CSE",
     subject: "Programming",
     year: "3rd Year",
-    image: "https://images-na.ssl-images-amazon.com/images/P/1491910399.01.L.jpg",
+    image:
+      "https://images-na.ssl-images-amazon.com/images/P/1491910399.01.L.jpg",
     seller: "Vikrant Sharma",
     location: "Academic Block",
     rating: 4.5,
@@ -298,7 +298,8 @@ const initialBooksDatabase = [
     department: "CSE",
     subject: "Programming",
     year: "2nd Year",
-    image: "https://images-na.ssl-images-amazon.com/images/P/1449374093.01.L.jpg",
+    image:
+      "https://images-na.ssl-images-amazon.com/images/P/1449374093.01.L.jpg",
     seller: "Sachin Kumar",
     location: "Room 102",
     rating: 4.4,
