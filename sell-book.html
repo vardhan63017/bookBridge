@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sell Book - BookBridge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <i class="fas fa-book-open"></i> BookBridge
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="buy-books.html">Buy Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="sell-book.html">Sell Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">Admin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-4">
+      <div class="container">
+        <h1><i class="fas fa-upload"></i> Sell Your Book</h1>
+        <p>List your books and earn money</p>
+      </div>
+    </section>
+
+    <!-- Sell Book Form -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card shadow-lg">
+              <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">List Your Book</h4>
+              </div>
+              <div class="card-body p-4">
+                <form id="sellBookForm">
+                  <!-- Book Image Upload -->
+                  <div class="mb-4">
+                    <label class="form-label fw-bold">Book Image</label>
+                    <div
+                      class="upload-area p-4 border-2 border-dashed rounded text-center"
+                      id="uploadArea"
+                    >
+                      <i class="fas fa-image fa-3x text-primary mb-2"></i>
+                      <p class="mb-0">Click to upload or drag and drop</p>
+                      <small class="text-muted">PNG, JPG up to 5MB</small>
+                    </div>
+                    <input
+                      type="file"
+                      class="d-none"
+                      id="bookImage"
+                      accept="image/*"
+                      required
+                    />
+                  </div>
+
+                  <!-- Book Name -->
+                  <div class="mb-3">
+                    <label for="bookName" class="form-label fw-bold"
+                      >Book Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="bookName"
+                      placeholder="e.g., DSA Made Easy"
+                      required
+                    />
+                  </div>
+
+                  <!-- Author Name -->
+                  <div class="mb-3">
+                    <label for="authorName" class="form-label fw-bold"
+                      >Author Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="authorName"
+                      placeholder="e.g., Narasimha Karumanchi"
+                      required
+                    />
+                  </div>
+
+                  <!-- Department -->
+                  <div class="mb-3">
+                    <label for="department" class="form-label fw-bold"
+                      >Department</label
+                    >
+                    <select
+                      class="form-select form-select-lg"
+                      id="department"
+                      required
+                    >
+                      <option value="">Select Department</option>
+                      <option value="CSE">CSE</option>
+                      <option value="ECE">ECE</option>
+                      <option value="EEE">EEE</option>
+                      <option value="Mechanical">Mechanical</option>
+                      <option value="Civil">Civil</option>
+                    </select>
+                  </div>
+
+                  <!-- Subject -->
+                  <div class="mb-3">
+                    <label for="subject" class="form-label fw-bold"
+                      >Subject</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="subject"
+                      placeholder="e.g., Data Structures and Algorithms"
+                      required
+                    />
+                  </div>
+
+                  <!-- Original Price -->
+                  <div class="mb-3">
+                    <label for="originalPrice" class="form-label fw-bold"
+                      >Original Price (₹)</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control form-control-lg"
+                      id="originalPrice"
+                      placeholder="700"
+                      min="0"
+                      required
+                    />
+                  </div>
+
+                  <!-- Selling Price -->
+                  <div class="mb-3">
+                    <label for="sellingPrice" class="form-label fw-bold"
+                      >Selling Price (₹)</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control form-control-lg"
+                      id="sellingPrice"
+                      placeholder="350"
+                      min="0"
+                      required
+                    />
+                  </div>
+
+                  <!-- Condition -->
+                  <div class="mb-3">
+                    <label for="condition" class="form-label fw-bold"
+                      >Book Condition</label
+                    >
+                    <select
+                      class="form-select form-select-lg"
+                      id="condition"
+                      required
+                    >
+                      <option value="">Select Condition</option>
+                      <option value="New">New - Never Used</option>
+                      <option value="Good">Good - Minimal Marks</option>
+                      <option value="Moderate">Moderate - Some Wear</option>
+                      <option value="Old">Old - Significant Use</option>
+                    </select>
+                  </div>
+
+                  <!-- Description -->
+                  <div class="mb-4">
+                    <label for="description" class="form-label fw-bold"
+                      >Description</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="description"
+                      rows="4"
+                      placeholder="Book contains notes and highlights. Good condition."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <!-- Contact Info -->
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="contactName" class="form-label fw-bold"
+                        >Your Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control form-control-lg"
+                        id="contactName"
+                        placeholder="Your Name"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="contactPhone" class="form-label fw-bold"
+                        >Phone Number</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control form-control-lg"
+                        id="contactPhone"
+                        placeholder="+91 98765 43210"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="contactEmail" class="form-label fw-bold"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      id="contactEmail"
+                      placeholder="your.email@college.ac.in"
+                      required
+                    />
+                  </div>
+
+                  <!-- Submit Button -->
+                  <button type="submit" class="btn btn-primary btn-lg w-100">
+                    <i class="fas fa-check-circle"></i> List Book
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Info Box -->
+            <div class="alert alert-info mt-4" role="alert">
+              <i class="fas fa-info-circle"></i> <strong>Note:</strong> Your
+              book will be reviewed and listed within 24 hours. You'll receive
+              notifications about interested buyers.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold mb-3">About BookBridge</h5>
+            <p>
+              Connecting students through affordable textbooks and sustainable
+              reading solutions.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="buy-books.html" class="text-white-50">Buy Books</a>
+              </li>
+              <li>
+                <a href="sell-book.html" class="text-white-50">Sell Books</a>
+              </li>
+              <li>
+                <a href="categories.html" class="text-white-50">Categories</a>
+              </li>
+              <li>
+                <a href="contact.html" class="text-white-50">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold mb-3">Contact</h5>
+            <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+            <p><i class="fas fa-envelope"></i> bookbridge@gmail.com</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> College Campus, City Center
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-white-50" />
+        <div class="text-center">
+          <p>&copy; 2025 BookBridge. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="btn btn-primary btn-floating" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/sell-book.js"></script>
+  </body>
+</html>

@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - BookBridge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <i class="fas fa-book-open"></i> BookBridge
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="buy-books.html">Buy Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sell-book.html">Sell Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">Admin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-4">
+      <div class="container">
+        <h1><i class="fas fa-envelope"></i> Contact Us</h1>
+        <p>We'd love to hear from you. Get in touch with us.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Contact Form -->
+          <div class="col-lg-6">
+            <div class="card shadow-lg">
+              <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Send us a Message</h4>
+              </div>
+              <div class="card-body p-4">
+                <form id="contactForm">
+                  <div class="mb-3">
+                    <label for="contactName" class="form-label fw-bold"
+                      >Your Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="contactName"
+                      placeholder="John Doe"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="contactEmail" class="form-label fw-bold"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      id="contactEmail"
+                      placeholder="john@example.com"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="contactPhone" class="form-label fw-bold"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control form-control-lg"
+                      id="contactPhone"
+                      placeholder="+91 98765 43210"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="contactSubject" class="form-label fw-bold"
+                      >Subject</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="contactSubject"
+                      placeholder="How can we help?"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="contactMessage" class="form-label fw-bold"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="contactMessage"
+                      rows="5"
+                      placeholder="Your message here..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-lg w-100">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="col-lg-6">
+            <!-- Contact Details -->
+            <div class="card shadow-lg mb-4">
+              <div class="card-header bg-success text-white">
+                <h4 class="mb-0">Contact Information</h4>
+              </div>
+              <div class="card-body p-4">
+                <div class="mb-4">
+                  <h5 class="fw-bold mb-2">
+                    <i class="fas fa-phone text-primary"></i> Phone
+                  </h5>
+                  <p class="ms-4">+91 98765 43210</p>
+                  <p class="ms-4 text-muted">
+                    Monday - Friday, 9:00 AM - 6:00 PM
+                  </p>
+                </div>
+
+                <hr />
+
+                <div class="mb-4">
+                  <h5 class="fw-bold mb-2">
+                    <i class="fas fa-envelope text-danger"></i> Email
+                  </h5>
+                  <p class="ms-4">
+                    <a
+                      href="mailto:bookbridge@gmail.com"
+                      class="text-decoration-none"
+                      >bookbridge@gmail.com</a
+                    >
+                  </p>
+                  <p class="ms-4 text-muted">We'll respond within 24 hours</p>
+                </div>
+
+                <hr />
+
+                <div class="mb-4">
+                  <h5 class="fw-bold mb-2">
+                    <i class="fas fa-map-marker-alt text-success"></i> Address
+                  </h5>
+                  <p class="ms-4">
+                    123 University Street<br />
+                    College Campus, City Center<br />
+                    PIN: 560001
+                  </p>
+                </div>
+
+                <hr />
+
+                <div>
+                  <h5 class="fw-bold mb-3">Follow Us On</h5>
+                  <div class="d-flex gap-3 ms-4">
+                    <a href="#" class="btn btn-primary btn-sm rounded-circle">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="btn btn-info btn-sm rounded-circle">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-danger btn-sm rounded-circle">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="btn btn-primary btn-sm rounded-circle">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="card shadow-lg">
+              <div class="card-header bg-warning text-white">
+                <h4 class="mb-0">FAQ</h4>
+              </div>
+              <div class="card-body p-4">
+                <div class="accordion" id="faqAccordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq1"
+                      >
+                        How long does delivery take?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq1"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Most books are available on campus. Delivery takes 1-3
+                        days.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq2"
+                      >
+                        Is payment secure?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Yes, all transactions are secure and verified.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq3"
+                      >
+                        Can I return a book?
+                      </button>
+                    </h2>
+                    <div
+                      id="faq3"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div class="accordion-body">
+                        Yes, within 7 days if the book is in original condition.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="mt-5">
+          <h2 class="fw-bold mb-4">Visit Us</h2>
+          <div class="card shadow-lg">
+            <div class="card-body p-0">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9418699999996!2d77.5641!3d12.9352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d4c8d6e8d6d%3A0x4d8d4d8d4d8d4d8d!2sCollege%20Campus!5e0!3m2!1sen!2sin!4v1234567890"
+                width="100%"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="rounded"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold mb-3">About BookBridge</h5>
+            <p>
+              Connecting students through affordable textbooks and sustainable
+              reading solutions.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="buy-books.html" class="text-white-50">Buy Books</a>
+              </li>
+              <li>
+                <a href="sell-book.html" class="text-white-50">Sell Books</a>
+              </li>
+              <li>
+                <a href="categories.html" class="text-white-50">Categories</a>
+              </li>
+              <li>
+                <a href="contact.html" class="text-white-50">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold mb-3">Contact</h5>
+            <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+            <p><i class="fas fa-envelope"></i> bookbridge@gmail.com</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> College Campus, City Center
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-white-50" />
+        <div class="text-center">
+          <p>&copy; 2025 BookBridge. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="btn btn-primary btn-floating" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
